@@ -1,4 +1,5 @@
-py-cord[bot]==2.5.0 --no-binary :all:
+py-cord[bot]==2.5.0
 python-dotenv
 pytz
+
 
