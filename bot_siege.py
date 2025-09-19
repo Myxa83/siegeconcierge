@@ -42,11 +42,12 @@ intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 intents.guilds = True
+intents.presences = True  # додано для роботи статусів
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ===== Цикл статусів =====
-@tasks.loop(minutes=5)
+@tasks.loop(minutes=10)  # раз на 10 хв
 async def change_status():
     tz = pytz.timezone("Europe/London")
     hour = datetime.now(tz).hour
@@ -70,7 +71,7 @@ async def on_ready():
     except Exception as e:
         print(f"⚠️ Помилка синхронізації: {e}")
 
-    change_status.start()  # запускаємо статуси
+    change_status.start()  # запускаємо цикл статусів
 
 # ===== Завантаження когів =====
 async def load_cogs():
