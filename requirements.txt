@@ -1,6 +1,6 @@
-python_version=="3.10.*"
 discord.py[voice]==2.3.2 # або остання стабільна версія
 python-dotenv
 pytz
 PyNaCl
+
 
