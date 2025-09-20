@@ -1,7 +1,6 @@
 services:
   - type: worker
-    name: siege-concierge
+    name: siegeconcierge
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    startCommand: python bot_siege.py
