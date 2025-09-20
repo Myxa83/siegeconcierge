@@ -1,8 +1,11 @@
-discord.py[voice]==2.3.2 # або остання стабільна версія
-disnake
+# Discord API (форк з підтримкою Python 3.11+)
+py-cord==2.5.0
+
+# Робота з .env файлами
 python-dotenv
+
+# Часові пояси
 pytz
+
+# Голос (обов’язково для voice client)
 PyNaCl
-
-
-
