@@ -9,3 +9,4 @@ pytz
 
 # Голос (обов’язково для voice client)
 PyNaCl
+audioop-lts
